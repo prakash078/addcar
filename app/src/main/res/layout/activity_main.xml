@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information of car"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="#070707"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name of car:"
+        android:textSize="20dp"
+        android:layout_below="@+id/top"/>
+
+    <EditText
+        android:id="@+id/edittextname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Enter car name"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year of Manufacture:"
+        android:layout_below="@+id/edittextname"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edittextyear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/year"
+        android:hint="Enter manufactured year"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Colour:"
+        android:layout_below="@+id/edittextyear"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edittextcolor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter colour of car"
+        android:layout_below="@+id/color"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchased Price (Rs.)"
+        android:layout_below="@+id/edittextcolor"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edittextprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter purchased price"
+        android:layout_below="@+id/price"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/engine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engine Size (Ltrs.)"
+        android:layout_below="@+id/edittextprice"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/edittextengine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter engine size"
+        android:layout_below="@+id/engine"
+        android:inputType="number"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextengine"
+        android:text="ADD"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button">
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+    </ScrollView>
+
+</RelativeLayout>
